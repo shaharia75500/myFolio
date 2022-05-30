@@ -1,0 +1,367 @@
+/* global declaration starts here */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 800;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+:root {
+    --first-color: #02918c;
+    --second-color: #cfc91d;
+    --first-font: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
+body {
+    font-family: var(--first-font);
+    font-weight: 800;
+}
+.main-section-heading {
+    color: var(--first-color);
+    font-size: 46px;
+    padding-top: 95px;
+}
+
+.main-section-subHeading {
+    color: #7e8287;
+    font-weight: 400;
+    padding: 30px 0;
+}
+
+.main-section-P {
+    font-weight: 400;
+    font-size: 16px;
+    color: #7e8287;
+    line-height: 41px;
+}
+/* global declaration ends here */
+
+/* nav starts here */
+.navbar {
+    background-color: var(--first-color);
+    height: 61px;
+}
+
+.nav-logo {
+    height: 20px;
+}
+
+.nav-logo img {
+    height: 100%;
+}
+
+.nav-menu {
+    margin-left: auto;
+}
+
+.nav-menu ul li a {
+    font-family: var(--first-font);
+    font-weight: 800;
+    font-size: 12px;
+    color: #ffffff;
+    padding-left: 50px;
+    transition: 0.6s;
+}
+
+.nav-menu ul li:hover a {
+    color: var(--second-color);
+}
+/* nav ends here */
+
+/* banner starts here */
+.banner {
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.386), rgba(0, 0, 0, 0.386)), url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 725px;
+}
+
+/* banner content starts here */
+.banner-content p {
+    font-family: var(--first-font);
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+
+.banner-content p span:first-child {
+    font-size: 30px;
+}
+
+.banner-content p span:last-child {
+    font-size: 18px;
+}
+
+.banner-content p span:nth-child(3) {
+    font-size: 68px;
+    line-height: 80px;
+    letter-spacing: 0.3em;
+}
+
+.bracket {
+    width: 100%;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.bracket img {
+    width: 107px;
+}
+
+.banner-btn button {
+    background-color: var(--second-color);
+    width: 196px;
+    height: 47px;
+    margin-top: 50px;
+}
+
+.banner-btn button a{
+    font-family: var(--first-font);
+    font-size: 14px;
+    color: #0b1016;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+}
+
+.banner-btn  button:hover  a {
+    background-color: #0b1016;
+    color: var(--second-color);
+}
+/* banner ends here */
+
+/* About section starts here */
+.about {
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    margin: auto;
+    color: #7e8287;
+    padding: 0 50px;
+    font-size: 16px;
+    line-height: 41px;
+}
+
+.about-content p span {
+    font-size: 23px;
+}
+
+.about-card {
+    width: 160px;
+}
+
+.About-card-all {
+    justify-content: space-between;
+    width: 1024px;
+    margin: auto;
+    color: #7e8287;
+    padding-top: 120px;
+    padding-bottom: 156px;
+}
+
+.about-card h1 {
+    font-size: 16px;
+    padding-bottom: 28px;
+    padding-top: 30px;
+}
+
+.about-card p {
+    font-size: 11px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+/* about section ends here */
+
+/* service section starts here */
+.container-services {
+    width: 1140px;
+    margin: auto;
+}
+
+#services {
+    background-image: url(../img/service.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 830px;
+}
+
+.services-content p {
+    width: 470px;
+}
+
+.services-card-all {
+    width: 455px;
+    justify-content: space-between;
+}
+.services-card {
+    width: 164px;
+    padding-top: 60px;
+}
+
+.services-card h3 {
+    font-size: 16px;
+    color: #7e8287;
+    padding-top: 17px;
+    padding-bottom: 22px;
+}
+
+.services-card p {
+    font-size: 11px;
+    color: #7e8287;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+/* services ends here */
+
+/* myWork starts here */
+.myWork-content {
+    width: 677px;
+    text-align: center;
+    margin: auto;
+}
+
+.myWork-img {
+    width: 25%;
+    line-height: 0;
+    position: relative;
+}
+
+.myWork-img img {
+    width: 100%;
+    height: 238px;
+}
+
+.myWork-img .overlay {
+    color: white;
+    background-color: rgba(2, 145, 140, 0.85);
+    inset: 10%;
+    position: absolute;
+    transform: scale(0);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.myWork-img:hover .overlay {
+    transform: scale(1);
+}
+
+.myWork-img .overlay h3 {
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 40px;
+}
+
+.myWork-img .overlay p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-top: 17px;
+    width: 192px;
+    margin: auto;
+}
+
+/* myWork ends here */
+
+/* contact starts here */
+.contact-content {
+    text-align: center;
+    padding-bottom: 75px;
+    width: 680px;
+    margin: auto;
+}
+/* contact ends here */
+
+
+/* footer starts here */
+footer {
+    background-color: #0b0b0b;
+    padding-top: 70px;
+}
+
+footer .form-input {
+    width: 924px;
+    margin: auto;
+    text-align: center;
+}
+
+footer .form-input input {
+    width: 70%;
+    height: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7e8287;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px #7e8287 solid;
+    outline: 0;
+}
+
+footer .form-input input:nth-child(3) {
+    width: 100%;
+}
+
+footer .form-input input:nth-child(4) {
+    width: 100%;
+}
+
+.submit-btn {
+    border: 0;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 70px 0;
+}
+
+.submit-btn button {
+    cursor: pointer;
+    background-color: #cfc91d;
+    color: 0b1016;
+    padding: 13px 55px;
+    margin: auto;
+}
+/* footer ends here */
+
+/* copyright starts here */
+.copyright {
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #000;
+    color: #7e8287;
+    padding: 30px 0;
+    text-align: center;
+}
